@@ -71,7 +71,9 @@ button,a,input,textarea{ -webkit-tap-highlight-color:transparent}
 .hero h1 span{color:#8b8f8d}
 .hero-sub{max-width:730px;margin:0 auto;color:#69706c;font-size:clamp(17px,2vw,20px)}
 .hero-actions{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:30px;flex-wrap:wrap}
-.product-stage{max-width:1080px;margin:72px auto 0;position:relative}
+.product-stage{max-width:1080px;margin:72px auto 0;position:relative;overflow:hidden;border-radius:18px}
+.product-stage>.product-shell{display:none}
+.platform-mockup{position:relative;z-index:1;display:block;width:1078px;height:744px;border:0;border-radius:18px;background:#fff;box-shadow:0 35px 90px rgba(16,38,30,.13);overflow:hidden;transform-origin:top left}
 .product-glow{position:absolute;inset:15% 8% -10%;background:rgba(12,182,122,.12);filter:blur(70px);border-radius:50%;pointer-events:none}
 .product-shell{position:relative;background:#fff;border:1px solid #dfe5e1;border-radius:18px;box-shadow:0 35px 90px rgba(16,38,30,.13);overflow:hidden;text-align:left;transform:perspective(1800px) rotateX(2deg);transform-origin:center top}
 .product-topbar{height:62px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 18px}

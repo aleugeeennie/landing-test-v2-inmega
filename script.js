@@ -161,4 +161,18 @@
       });
     }
   }
+
+  const platformMockup = document.querySelector('.platform-mockup');
+  const mockupStage = platformMockup?.closest('.product-stage');
+  if (platformMockup && mockupStage) {
+    const nativeWidth = 1078;
+    const nativeHeight = 744;
+    const fitPlatformMockup = () => {
+      const scale = Math.max(mockupStage.clientWidth, 1) / nativeWidth;
+      platformMockup.style.transform = `scale(${scale})`;
+      mockupStage.style.height = `${nativeHeight * scale}px`;
+    };
+    fitPlatformMockup();
+    new ResizeObserver(fitPlatformMockup).observe(mockupStage);
+  }
 })();
