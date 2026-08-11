@@ -381,6 +381,7 @@ body.cursor-hover .cursor-ring{width:40px;height:40px;margin:-17.5px 0 0 -17.5px
 .thankyou-card p strong{color:#8b918d;font-weight:600}
 .thankyou-actions{display:flex;justify-content:center;margin-top:28px}
 .thankyou-pending{font-size:11px!important;color:#a0a5a2!important;margin-top:20px}
-.thankyou-footer{height:54px;background:#050706;color:#717873;display:flex;align-items:center;justify-content:center;font-size:11px}
+.thankyou-footer{height:54px;background:#050706;color:#717873;display:flex;align-items:center;justify-content:center;gap:18px;font-size:11px}
+.thankyou-footer img{width:112px;height:auto}
 .thankyou-footer a{color:#cfd5d1;margin-left:4px}
 @media(max-width:680px){.thankyou-page{padding:18px}.thankyou-card{padding:38px 22px}}
