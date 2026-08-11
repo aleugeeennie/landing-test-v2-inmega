@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PainIndex de INMEGA | Inteligencia de reseñas multi-sucursal</title>
+  <meta name="description" content="Extraemos, clasificamos y priorizamos las reseñas de todas tus sucursales (Google Maps, Yelp y más) para que detectes los problemas antes de que escalen y sepas exactamente dónde actuar.">
+  <meta name="theme-color" content="#F7F8F6">
+  <link rel="icon" href="assets/logos/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header" data-header>
+    <div class="container nav-inner">
+      <a class="brand" href="#inicio" aria-label="INMEGA, ir al inicio">
+        <img src="assets/logos/inmega-logo-black.png" alt="INMEGA" width="334" height="188">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#painindex">PainIndex</a>
+        <a href="#capacidades">Capacidades</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#faq">FAQs</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-dark btn-small" href="#demo">Agenda tu demo</a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Navegación móvil" hidden>
+      <a href="#painindex">PainIndex</a>
+      <a href="#capacidades">Capacidades</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#faq">FAQs</a>
+      <a class="btn btn-dark" href="#demo">Agenda tu demo</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero grid-bg" id="inicio">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <span class="pill"><span class="status-dot"></span> PainIndex — inteligencia de reseñas para negocios multi-sucursal</span>
+          <h1>Cada reseña dice algo.<br><span>PainIndex te dice qué hacer.</span></h1>
+          <p class="hero-sub">
+            Extraemos, clasificamos y priorizamos las reseñas de todas tus sucursales
+            (Google Maps, Yelp y más) para que detectes los problemas antes de que escalen
+            y sepas exactamente dónde actuar.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="#demo">Agenda tu demo gratis <span aria-hidden="true">→</span></a>
+            <a class="btn btn-light" href="#painindex">Ver demo</a>
+          </div>
+        </div>
+
+        <div class="product-stage reveal" aria-label="Vista conceptual del dashboard PainIndex">
+          <div class="product-glow" aria-hidden="true"></div>
+          <div class="product-shell">
+            <div class="product-topbar">
+              <div class="product-title">
+                <img src="assets/logos/inmega-mark.png" alt="" aria-hidden="true">
+                <strong>PainIndex</strong>
+              </div>
+              <div class="topbar-chips" aria-hidden="true">
+                <span>Todas las sucursales</span>
+                <span>Google Maps, Yelp y más</span>
+              </div>
+            </div>
+
+            <div class="product-body">
+              <aside class="product-sidebar" aria-hidden="true">
+                <span class="side-active">Resumen</span>
+                <span>Reseñas</span>
+                <span>Categorías</span>
+                <span>Benchmarking</span>
+                <span>Alertas</span>
+              </aside>
+
+              <div class="product-main">
+                <div class="dashboard-meta">
+                  <div>
+                    <span class="micro-label">dirección, gerencia u operación</span>
+                    <h2>Toda la voz de tus sucursales, en un solo dashboard.</h2>
+                  </div>
+                  <span class="live-chip"><i></i> Dashboard en vivo</span>
+                </div>
+
+                <div class="metric-row">
+                  <article class="metric-card">
+                    <span>Índice de dolor</span>
+                    <strong>qué duele y dónde</strong>
+                    <div class="mini-spark" aria-hidden="true">
+                      <svg viewBox="0 0 220 56">
+                        <path class="spark-guide" d="M5 38 C40 10,67 48,105 23 S165 35,215 12"/>
+                        <path class="spark-line" d="M5 38 C40 10,67 48,105 23 S165 35,215 12"/>
+                      </svg>
+                    </div>
+                  </article>
+                  <article class="metric-card">
+                    <span>Alertas instantáneas</span>
+                    <strong>Te enteras el mismo día</strong>
+                    <div class="alert-stack" aria-hidden="true">
+                      <i></i><i></i><i></i>
+                    </div>
+                  </article>
+                  <article class="metric-card">
+                    <span>Benchmarking de competencia</span>
+                    <strong>sucursal por sucursal</strong>
+                    <div class="bar-stack" aria-hidden="true">
+                      <i style="--w:78%"></i><i style="--w:58%"></i><i style="--w:42%"></i>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="dashboard-grid">
+                  <article class="chart-card">
+                    <div class="card-head">
+                      <div>
+                        <span class="micro-label">Categorías y subcategorías</span>
+                        <strong>tema, producto y sucursal</strong>
+                      </div>
+                      <span class="chip">Ver demo</span>
+                    </div>
+                    <svg class="trend-chart" viewBox="0 0 620 240" role="img" aria-label="Gráfico conceptual de tendencias por categoría">
+                      <defs>
+                        <linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1">
+                          <stop offset="0" stop-color="#0CB67A" stop-opacity=".18"/>
+                          <stop offset="1" stop-color="#0CB67A" stop-opacity="0"/>
+                        </linearGradient>
+                      </defs>
+                      <g class="chart-gridlines">
+                        <line x1="20" y1="40" x2="600" y2="40"/>
+                        <line x1="20" y1="100" x2="600" y2="100"/>
+                        <line x1="20" y1="160" x2="600" y2="160"/>
+                        <line x1="20" y1="220" x2="600" y2="220"/>
+                      </g>
+                      <path class="area-path" d="M20 190 C90 170,115 125,180 145 S285 70,350 100 S455 145,600 55 L600 220 L20 220 Z"/>
+                      <path class="chart-path" d="M20 190 C90 170,115 125,180 145 S285 70,350 100 S455 145,600 55"/>
+                      <g class="chart-points">
+                        <circle cx="180" cy="145" r="5"/><circle cx="350" cy="100" r="5"/><circle cx="600" cy="55" r="5"/>
+                      </g>
+                    </svg>
+                  </article>
+
+                  <article class="insight-card">
+                    <span class="micro-label">Chat con IA</span>
+                    <strong>Pregúntale a tus datos</strong>
+                    <div class="chat-bubble">Pregúntale a tus datos</div>
+                    <div class="answer-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <div class="prompt-bar" aria-hidden="true"><span>Pregúntale a tus datos</span><b>↑</b></div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual conceptual: sin métricas reales ni información de clientes. -->
+      </div>
+    </section>
+
+    <section class="capability-marquee" aria-label="Capacidades principales">
+      <div class="marquee-track">
+        <span>Índice de dolor</span><i></i>
+        <span>Alertas instantáneas</span><i></i>
+        <span>Benchmarking de competencia</span><i></i>
+        <span>Categorías y subcategorías</span><i></i>
+        <span>Dashboards personalizables</span><i></i>
+        <span>Chat con IA</span><i></i>
+        <span aria-hidden="true">Índice de dolor</span><i aria-hidden="true"></i>
+        <span aria-hidden="true">Alertas instantáneas</span><i aria-hidden="true"></i>
+        <span aria-hidden="true">Benchmarking de competencia</span><i aria-hidden="true"></i>
+      </div>
+    </section>
+
+    <section class="section section-intro" id="painindex">
+      <div class="container">
+        <div class="split-heading reveal">
+          <div>
+            <span class="pill pill-soft">PainIndex</span>
+            <h2>Deja de operar a ciegas</h2>
+          </div>
+          <p><strong>Toda la voz de tus sucursales, en un solo dashboard.</strong><br>Sin monitoreo manual, sin perder información.</p>
+        </div>
+
+        <div class="orbit-shell reveal">
+          <svg class="orbit-svg" viewBox="0 0 1200 680" role="img" aria-labelledby="orbit-title orbit-desc">
+            <title id="orbit-title">PainIndex</title>
+            <desc id="orbit-desc">PainIndex convierte las reseñas dispersas de todas tus sucursales en un índice accionable y alertas a tiempo.</desc>
+            <defs>
+              <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+                <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0d2c22" flood-opacity=".10"/>
+              </filter>
+              <radialGradient id="coreGreen">
+                <stop offset="0" stop-color="#ECFFF7"/>
+                <stop offset=".62" stop-color="#D8F8EA"/>
+                <stop offset="1" stop-color="#FFFFFF"/>
+              </radialGradient>
+            </defs>
+
+            <circle class="orbit-ring orbit-ring-a" cx="600" cy="340" r="205"/>
+            <circle class="orbit-ring orbit-ring-b" cx="600" cy="340" r="132"/>
+
+            <g class="orbit-connectors">
+              <path id="p1" d="M600 230 L600 105"/>
+              <path id="p2" d="M695 285 L900 160"/>
+              <path id="p3" d="M695 395 L900 520"/>
+              <path id="p4" d="M600 450 L600 575"/>
+              <path id="p5" d="M505 395 L300 520"/>
+              <path id="p6" d="M505 285 L300 160"/>
+            </g>
+
+            <g class="flow-dots" aria-hidden="true">
+              <circle r="5"><animateMotion dur="2.8s" repeatCount="indefinite"><mpath href="#p1"/></animateMotion></circle>
+              <circle r="5"><animateMotion dur="3.2s" repeatCount="indefinite"><mpath href="#p2"/></animateMotion></circle>
+              <circle r="5"><animateMotion dur="3.6s" repeatCount="indefinite"><mpath href="#p3"/></animateMotion></circle>
+              <circle r="5"><animateMotion dur="3.1s" repeatCount="indefinite"><mpath href="#p4"/></animateMotion></circle>
+              <circle r="5"><animateMotion dur="3.8s" repeatCount="indefinite"><mpath href="#p5"/></animateMotion></circle>
+              <circle r="5"><animateMotion dur="3.4s" repeatCount="indefinite"><mpath href="#p6"/></animateMotion></circle>
+            </g>
+
+            <g class="core" filter="url(#softShadow)">
+              <circle cx="600" cy="340" r="110" fill="url(#coreGreen)"/>
+              <circle cx="600" cy="340" r="82" fill="#fff" stroke="#DDE7E1"/>
+              <image href="assets/logos/inmega-mark.png" x="535" y="266" width="130" height="100" preserveAspectRatio="xMidYMid meet"/>
+              <text x="600" y="390" text-anchor="middle">PainIndex</text>
+            </g>
+
+            <g class="orbit-node" transform="translate(465 68)">
+              <rect width="270" height="78" rx="20"/>
+              <text x="135" y="33" text-anchor="middle" class="node-title">Índice de dolor</text>
+              <text x="135" y="55" text-anchor="middle" class="node-copy">qué duele y dónde</text>
+            </g>
+            <g class="orbit-node" transform="translate(880 120)">
+              <rect width="280" height="78" rx="20"/>
+              <text x="140" y="33" text-anchor="middle" class="node-title">Alertas instantáneas</text>
+              <text x="140" y="55" text-anchor="middle" class="node-copy">Te enteras el mismo día</text>
+            </g>
+            <g class="orbit-node" transform="translate(880 482)">
+              <rect width="280" height="78" rx="20"/>
+              <text x="140" y="33" text-anchor="middle" class="node-title">Benchmarking de competencia</text>
+              <text x="140" y="55" text-anchor="middle" class="node-copy">sucursal por sucursal</text>
+            </g>
+            <g class="orbit-node" transform="translate(450 542)">
+              <rect width="300" height="78" rx="20"/>
+              <text x="150" y="33" text-anchor="middle" class="node-title">Categorías y subcategorías</text>
+              <text x="150" y="55" text-anchor="middle" class="node-copy">tema, producto y sucursal</text>
+            </g>
+            <g class="orbit-node" transform="translate(40 482)">
+              <rect width="300" height="78" rx="20"/>
+              <text x="150" y="33" text-anchor="middle" class="node-title">Dashboards personalizables</text>
+              <text x="150" y="55" text-anchor="middle" class="node-copy">dirección, gerencia u operación</text>
+            </g>
+            <g class="orbit-node" transform="translate(55 120)">
+              <rect width="270" height="78" rx="20"/>
+              <text x="135" y="33" text-anchor="middle" class="node-title">Chat con IA</text>
+              <text x="135" y="55" text-anchor="middle" class="node-copy">Pregúntale a tus datos</text>
+            </g>
+          </svg>
+
+          <div class="orbit-mobile" aria-hidden="true">
+            <div class="mobile-core"><img src="assets/logos/inmega-mark.png" alt="">PainIndex</div>
+            <span>Índice de dolor</span><span>Alertas instantáneas</span><span>Benchmarking</span>
+            <span>Categorías</span><span>Dashboards</span><span>Chat con IA</span>
+          </div>
+        </div>
+
+        <div class="center-cta reveal"><a class="btn btn-dark" href="#demo">Agenda tu demo <span aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+
+    <section class="section grid-bg" id="capacidades">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="pill pill-soft">PainIndex</span>
+          <h2>Claridad y control operativo</h2>
+          <p>PainIndex convierte las reseñas dispersas de todas tus sucursales en un índice accionable y alertas a tiempo.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-number">01</span>
+            <h3>Índice de dolor</h3>
+            <p>Convertimos miles de reseñas en un índice claro de qué duele y dónde.</p>
+            <a href="#demo">Ver demo <span>→</span></a>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-number">02</span>
+            <h3>Alertas instantáneas</h3>
+            <p>Te enteras el mismo día, no cuando el problema ya escaló.</p>
+            <a href="#demo">Ver demo <span>→</span></a>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-number">03</span>
+            <h3>Benchmarking de competencia</h3>
+            <p>Te comparas contra tu mercado, sucursal por sucursal.</p>
+            <a href="#demo">Ver demo <span>→</span></a>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-number">04</span>
+            <h3>Categorías y subcategorías</h3>
+            <p>Cada comentario, ordenado por tema, producto y sucursal.</p>
+            <a href="#demo">Ver demo <span>→</span></a>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-number">05</span>
+            <h3>Dashboards personalizables</h3>
+            <p>Cada rol ve lo que necesita: dirección, gerencia u operación.</p>
+            <a href="#demo">Ver demo <span>→</span></a>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-number">06</span>
+            <h3>Chat con IA</h3>
+            <p>Pregúntale a tus datos y obtén respuestas al instante.</p>
+            <a href="#demo">Ver demo <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contrast-section">
+      <div class="container">
+        <div class="contrast-card reveal">
+          <div class="contrast-copy">
+            <span class="pill pill-dark">Control operativo</span>
+            <h2>Deja de operar a ciegas</h2>
+            <p><strong>Toda la voz de tus sucursales, en un solo dashboard.</strong><br>Sin monitoreo manual, sin perder información.</p>
+            <a class="btn btn-white" href="#demo">Agenda tu demo <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="contrast-ui" aria-hidden="true">
+            <div class="ui-window">
+              <div class="ui-head"><span></span><span></span><span></span></div>
+              <div class="ui-content">
+                <div class="ui-row wide"></div>
+                <div class="ui-row"></div>
+                <div class="ui-chart">
+                  <i style="--h:38%"></i><i style="--h:62%"></i><i style="--h:47%"></i><i style="--h:78%"></i><i style="--h:55%"></i><i style="--h:88%"></i>
+                </div>
+                <div class="ui-tags"><b>Categorías</b><b>Alertas</b><b>Benchmarking</b></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="nosotros">
+      <div class="container about-layout">
+        <div class="about-copy reveal">
+          <span class="pill pill-soft">INMEGA</span>
+          <h2>Somos INMEGA, inteligencia de negocios</h2>
+          <p>Creadores de PainIndex, especializados en dar claridad a negocios multi-sucursal: análisis de competencia, posicionamiento, control operativo y benchmarking.</p>
+          <a class="btn btn-light" href="#demo">Agenda tu demo</a>
+        </div>
+        <div class="about-list reveal">
+          <div><span>01</span><p>Extrae y clasifica reseñas de Google Maps, Yelp y más</p></div>
+          <div><span>02</span><p>Alertas diarias de lo que necesita tu atención</p></div>
+          <div><span>03</span><p>Categorías y subcategorías automáticas</p></div>
+          <div><span>04</span><p>Benchmarking vs. competencia, sucursal por sucursal</p></div>
+          <div><span>05</span><p>Dashboards personalizables por rol</p></div>
+          <div><span>06</span><p>Chat con IA sobre tus datos</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section plan-lite grid-bg">
+      <div class="container">
+        <div class="plan-lite-card reveal">
+          <div>
+            <span class="pill pill-soft">Planes y paquetes</span>
+            <h2>¿Cuánto cuesta?</h2>
+            <p>Manejamos 6 planes según tus sucursales y necesidades, con contrato mínimo de 3 meses. En la demo armamos el plan a tu medida.</p>
+          </div>
+          <a class="btn btn-dark" href="#demo">Solicita una demo <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios no publicados: el PDF exige autorización firmada antes de mostrar social proof. -->
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-heading reveal">
+          <span class="pill pill-soft">PainIndex</span>
+          <h2>FAQ</h2>
+          
+        </div>
+
+        <div class="accordion reveal">
+          <article class="faq-item is-open">
+            <button type="button" aria-expanded="true" aria-controls="faq-a">
+              <span>¿Para qué empresas es PainIndex?</span><b aria-hidden="true">+</b>
+            </button>
+            <div id="faq-a" class="faq-answer">
+              <p>Para negocios multi-sucursal o franquicias. Idealmente desde 10 sucursales, o menos si manejas un alto volumen de reseñas.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false" aria-controls="faq-b">
+              <span>¿Qué fuentes de reseñas conecta?</span><b aria-hidden="true">+</b>
+            </button>
+            <div id="faq-b" class="faq-answer" hidden>
+              <p>Google Maps, Yelp y más plataformas donde tus clientes comentan, todas centralizadas en un dashboard.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false" aria-controls="faq-c">
+              <span>¿Puedo monitorear a mi competencia?</span><b aria-hidden="true">+</b>
+            </button>
+            <div id="faq-c" class="faq-answer" hidden>
+              <p>Sí. Te comparas contra tu mercado sucursal por sucursal, con las mismas categorías que aplicamos a tu negocio.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false" aria-controls="faq-d">
+              <span>¿Se integra con mis herramientas?</span><b aria-hidden="true">+</b>
+            </button>
+            <div id="faq-d" class="faq-answer" hidden>
+              <p>Sí: HubSpot, Zapier, Google y Meta, para que la información fluya sin trabajo manual.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false" aria-controls="faq-e">
+              <span>¿Cuánto cuesta?</span><b aria-hidden="true">+</b>
+            </button>
+            <div id="faq-e" class="faq-answer" hidden>
+              <p>Manejamos 6 planes según tus sucursales y necesidades, con contrato mínimo de 3 meses. En la demo armamos el plan a tu medida.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false" aria-controls="faq-f">
+              <span>¿Cómo empiezo?</span><b aria-hidden="true">+</b>
+            </button>
+            <div id="faq-f" class="faq-answer" hidden>
+              <p>Agenda una demo gratuita del dashboard con tus propios datos. Si te hace sentido, avanzamos con la contratación.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false" aria-controls="faq-g">
+              <span>¿Cada cuándo recibo información?</span><b aria-hidden="true">+</b>
+            </button>
+            <div id="faq-g" class="faq-answer" hidden>
+              <p>Alertas diarias directo a tu bandeja y un dashboard en vivo disponible 24/7.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false" aria-controls="faq-h">
+              <span>¿Quién lo usa en mi equipo?</span><b aria-hidden="true">+</b>
+            </button>
+            <div id="faq-h" class="faq-answer" hidden>
+              <p>Dirección, gerencia y operación: cada rol tiene su propio dashboard con lo que le importa.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section demo-section" id="demo">
+      <div class="container">
+        <div class="demo-shell reveal">
+          <div class="demo-copy">
+            <span class="pill pill-dark">PainIndex</span>
+            <h2>Ve lo que está pasando en tus sucursales</h2>
+            <p>Déjanos tus datos y agendamos una demo con tu propia operación.</p>
+            <div class="demo-points">
+              <span><i></i>Número de sucursales</span>
+              <span><i></i>Número aproximado de reseñas</span>
+              <span><i></i>Giro</span>
+            </div>
+          </div>
+
+          <form class="lead-form" id="leadForm" data-endpoint="[DATO PENDIENTE]" novalidate>
+            <div class="field two">
+              <label for="nombre">Nombre y apellido</label>
+              <input id="nombre" name="nombre" autocomplete="name" placeholder="Ej. Ana Martínez" required>
+              <small class="error"></small>
+            </div>
+            <div class="field two">
+              <label for="correo">Correo</label>
+              <input id="correo" name="correo" type="email" autocomplete="email" placeholder="Ej. ana@empresa.com" required>
+              <small class="error"></small>
+            </div>
+            <div class="field two">
+              <label for="telefono">Teléfono</label>
+              <input id="telefono" name="telefono" type="tel" autocomplete="tel" placeholder="Ej. 33 1234 5678" required>
+              <small class="error"></small>
+            </div>
+            <div class="field two">
+              <label for="sucursales">Número de sucursales</label>
+              <input id="sucursales" name="sucursales" type="number" min="1" inputmode="numeric" placeholder="Ej. 12" required>
+              <small class="error"></small>
+            </div>
+            <div class="field two">
+              <label for="resenas">Número aproximado de reseñas (mín. 10–15)</label>
+              <input id="resenas" name="resenas" type="number" min="0" inputmode="numeric" aria-describedby="resenas-help" placeholder="Ej. 250" required>
+              
+              <small class="error"></small>
+            </div>
+            <div class="field two">
+              <label for="giro">Giro</label>
+              <input id="giro" name="giro" autocomplete="organization-title" placeholder="Escribe el giro, no el nombre de empresa" required>
+              <small class="error"></small>
+            </div>
+            <div class="field full">
+              <label for="objetivo">¿Qué buscas lograr con la información?</label>
+              <textarea id="objetivo" name="objetivo" rows="4" placeholder="Ej. detectar problemas por sucursal y priorizar acciones" required></textarea>
+              <small class="error"></small>
+            </div>
+            <label class="legal-check full">
+              <input type="checkbox" name="privacidad" required>
+              <span>Acepto el aviso de privacidad. <em>[URL legal pendiente]</em></span>
+            </label>
+
+            <button class="btn btn-white full" type="submit">Agenda mi demo <span aria-hidden="true">→</span></button>
+            <p class="form-status full" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logos/inmega-logo-white.png" alt="INMEGA" width="334" height="188">
+        <p>Creadores de PainIndex, especializados en dar claridad a negocios multi-sucursal: análisis de competencia, posicionamiento, control operativo y benchmarking.</p>
+      </div>
+      <div>
+        <strong>Menú</strong>
+        <a href="#inicio">Inicio</a>
+        <a href="#painindex">PainIndex</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#demo">Contacto</a>
+      </div>
+      <div>
+        <strong>Legal</strong>
+        <a href="#" data-pending-link>Aviso de privacidad</a>
+        <a href="#" data-pending-link>Términos</a>
+      </div>
+      <div>
+        <strong>Redes</strong>
+        <span class="pending-social">Instagram <small>[URL pendiente]</small></span>
+        <span class="pending-social">Facebook <small>[URL pendiente]</small></span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>INMEGA · PainIndex</span>
+      <span>Desarrollado por <a href="https://dinametra.com/" target="_blank" rel="noopener">Dinametra.com</a></span>
+    </div>
+  </footer>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+</body>
+</html>
